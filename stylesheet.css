@@ -1,33 +1,49 @@
 
 * {
-	margin: auto;
+	margin: 0 auto;
 	padding: auto;
 }
 
 
 body {
-	padding: 0 20px;
+	padding: 0 40px;
 	max-width: 1400px; 
+
 }
 
-.main_content {
+.main {
 	border-style: solid;
 	border-width: 1px;
 }
 
+
+
+/*Header*/
 header {
 	padding: 10px;
 	height: 60px;
 }
 
+.header {
+	display: flex;
+	
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
 .header_left_logo {
+	margin-left:auto;
     max-width: 300px; 
+    flex: 1;
+
 }
 
 .header_right_icons {
-	line-height: 60px;
-	margin-left: 10px;
+	margin-right: auto;
+	padding: 0px 10px;
+	flex: 2;
 }
+
 
 a:link, a:visited {
 	text-decoration: none;
@@ -43,24 +59,38 @@ li {
 
 
 
+/*Navigation*/
 nav {
 	width: 100%;
-	background-color: green;
+	background-color: #efe9d9;
 	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 }
+
+.nav_icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin: 0;
+	padding: 0;
+}
+
 nav li {
 	display: inline-block;
 	padding: 0px 10px;
 }
 
 .nav_house_icon, .nav_email_icon, .nav_add_icon {
-	width: 50px;
+	max-width: 50px;
 }
 
 
 
+/*Gallery*/
 .gallery {
-	background-color: silver;
+	background-color: black;
 }
 
 ul.gallery_cases {
@@ -94,6 +124,7 @@ ul.gallery_cases li:hover span {
 
 
 
+/*Footer*/
 footer {
 	background-color: green;
 	text-align: center;
@@ -106,8 +137,27 @@ footer {
 	margin-right: auto;
 }
 
-.footer_social {
+.footer_social img{
 	width: 30px;
+}
+
+
+
+
+/*Property Page*/
+
+
+.prop_search {
+	width: 100%;
+	background-color: black;
+}
+
+.prop_search_title {
+	color: white;
+}
+
+.prop_search_bar {
+
 }
 
 
@@ -120,17 +170,15 @@ footer {
 
 
 
+.test {
+	border: 1px;
+	height: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.test p {
+	color: blue;
+	text-align: right;
+}
 
 
 
